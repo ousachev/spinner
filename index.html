@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__up">
+        <div class="container">
+          <div class="header__up--flex">
+            <a href="#" class="logo"></a>
+            <a class="login" href="#">Log in</a>
+          </div>
+        </div>
+      </div>
+      <div class="header__down">
+        <div class="container flex-container ">
+          <ul class="nav__list">
+            <li class="nav__elem selected">
+              <a href="#">One touch victory mode</a>
+            </li>
+            <li class="nav__elem">
+              <a href="#">About</a>
+            </li>
+            <li class="nav__elem">
+              <a href="#">Get more</a>
+            </li>
+            <li class="nav__elem">
+              <a href="#">Statistic</a>
+            </li>
+          </ul>
+
+          <a href="#" class="unread__messages"></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="lottery">
+        <div class="main__container">
+          <div class="lottery__popup">
+            <div class="lottery__left">
+              <div class="lottery__titles">
+                <h1>WIN THE NEW IPHONE XI PRO!</h1>
+                <h2>Click<span> on the ''Wheel of Fortune'' to </span>get your prize!</h2>
+                <div class="timer__block">
+                  <div class="timer__bell"></div>
+                  <h3>
+                    The game is cancelled after&ensp;<span id="timer">0:59</span>&ensp;sec( if you don't spin )
+                  </h3>
+                </div>
+              </div>
+              <div class="lottery__section">
+                <div class="lottery__spinner"></div>
+                <button class="lottery__pointer"></button>
+              </div>
+            </div>
+            <div class="lottery__right">
+              <div class="lottery__date ">
+                <div class="bell"></div>
+                <div class="date"></div>
+              </div>
+              <li class="lottery__chat">
+                <ul class="lottery__messages">
+                  <li class="lottery__message">
+                    Hello Friend! Here you can see the results of the today's
+                    draw.
+                  </li>
+                  <li class="lottery__message">
+                    Sarah From Dhaka got nothing.
+                  </li>
+                  <li class="lottery__message-spin">
+                    One more user playing ''The Wheel of Fortune'' right now.
+                  </li>
+                  <li class="lottery__message message__win">
+                    User from Toronto just won an AirPods!
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="comments">
+        <div class="main__container comments__container">
+          <div class="comments__assets">
+            <div class="comments__counter">Comments (293)</div>
+            <button class="comments__button">Add comment</button>
+          </div>
+          <div class="chat">
+            <ul class="chat__list">
+              <li class="chat-user">
+                <div class="user__avatar"></div>
+                <div class="user__desc">
+                  <div class="user__info">
+                    <div class="user__name">William Curveo</div>
+                    <div class="user__time">23 min</div>
+                  </div>
+                  <div class="user__message">
+                    WOOOOOOOOOOOW!! I WON!!! WHAT?!?! Seems like a joke but it
+                    isn't!!<br>Unbelievable...
+                  </div>
+                </div>
+              </li>
+              <li class="chat-user">
+                <div class="user__avatar"></div>
+                <div class="user__desc">
+                  <div class="user__info">
+                    <div class="user__name">Olive Korp</div>
+                    <div class="user__time">3 hours</div>
+                  </div>
+                  <div class="user__message">Is it real??</div>
+                </div>
+              </li>
+              <li class="chat-user">
+                <div class="user__avatar"></div>
+                <div class="user__desc">
+                  <div class="user__info">
+                    <div class="user__name">Ben Wheeler</div>
+                    <div class="user__time">4 hours</div>
+                  </div>
+                  <div class="user__message">
+                    Fantastic!! I have never won anything,but i am lucky!!!
+                  </div>
+                </div>
+              </li>
+              <li class="chat-user">
+                <div class="user__avatar"></div>
+                <div class="user__desc">
+                  <div class="user__info">
+                    <div class="user__name">Joe Reed</div>
+                    <div class="user__time">7 hours</div>
+                  </div>
+                  <div class="user__message">Nothing((</div>
+                </div>
+              </li>
+              <li class="chat-user">
+                <div class="user__avatar"></div>
+                <div class="user__desc">
+                  <div class="user__info">
+                    <div class="user__name">Patric Terraz</div>
+                    <div class="user__time">1 day</div>
+                  </div>
+                  <div class="user__message">
+                    My friend tell me about this draw and i laughed at him,but
+                    we decided to try ot togetherMy friend tell me about this
+                    draw and i laughed at himi
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <span class="comments__all">View more 288 comments</span>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container flex-container footer__container">
+        <div class="footer__socials"></div>
+        <ul class="footer__list">
+          <li class="footer__list-elem">
+            <a href="#">Terms to use privacy policy</a>
+          </li>
+          <li class="footer__list-elem">
+            <a href="#">About company</a>
+          </li>
+          <li class="footer__list-elem">
+            <a href="#">Support Center</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <div class="modal" data-modal="1">
+    <div class="modal__popup">
+      <div class="modal__pic"> </div>
+      <div class="modal__desc">
+        <div class="modal__title"></div>
+        <div class="date modal__date"></div>
+        <div class="modal__pic phone__size-pic-visible"> </div>
+        <div class="modal__info">
+          <div class="modal__text">You are the lucky visitor that got unique opportunity to win a prize!</div>
+          <button class="yellow-button yellow-button--modal">LET'S DO IT!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal win__modal" data-modal="2">
+    <div class="win__confetti">
+      <div class="win__popup">
+        <div class="win__wow"></div>
+        <span class="win__text">YOU GOT THE NEW IPHONE XI PRO!!!</span>
+        <div class="win__pic"></div>
+        <div class="yellow-button win__button">CONTINUE</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    let sec = 59;
+    let min = 00;
+    function refresh() {
+      sec--;
+      if (sec <= 9) { sec = "0" + sec; }
+      time = ("0" + min) + ":" + sec;
+      if (document.getElementById) { timer.innerHTML = time; }
+      inter = setTimeout("refresh()", 1000);
+      if (sec == '00') {
+        sec = "00";
+        clearInterval(inter);
+      }
+    }
+  </script>
+  <script>
+    let getWeekDay = (date) => {
+      let days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thirsday",
+        "Friday",
+        "Saturday",
+      ];
+
+      let months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ]
+      let dateDay = date.getDate();
+      let dateYear = date.getFullYear();
+      let dayOfWeek = days[date.getDay()];
+      let month = months[date.getMonth()];
+      let currentDate = `${dayOfWeek}, ${dateDay} ${month}, ${dateYear}`;
+      const allDates = document.querySelectorAll(".date");
+      allDates.forEach(item => item.innerHTML = currentDate);
+    };
+    let date = new Date();
+    getWeekDay(date);
+  </script>
+  <script>
+    const buttons = document.querySelectorAll(".yellow-button");
+    const modals = document.querySelectorAll(".modal");
+    buttons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        button.closest(".modal").style.display = "none"
+        refresh();
+      })
+    })
+  </script>
+  <script>
+    const pointer = document.querySelector(".lottery__pointer");
+    const spinner = document.querySelector(".lottery__spinner");
+    const messageSpin = document.querySelector(".lottery__message-spin");
+    const messageWin = document.querySelector(".message__win");
+    const winModal = document.querySelector(".win__modal");
+    let counter = 0;
+    let degCounter = 0;
+    const styleBlock = (message, time) => setTimeout(() => message.style.display = "block", time)
+
+    pointer.addEventListener("click", () => {
+      counter++;
+      pointer.setAttribute("disabled", "disabled");
+
+      if (counter === 1) {
+        spinner.style.transform = `rotate(${1282.5 + degCounter}deg)`;
+        degCounter += 1282.5;
+        styleBlock(messageSpin, 1000)
+        styleBlock(messageWin, 3000)
+      }
+      if (counter === 2) {
+        spinner.style.transform = `rotate(${1215 + degCounter}deg)`;
+        degCounter += 1215;
+        styleBlock(winModal, 2000)
+      }
+      if (counter === 3) {
+        spinner.style.transform = `rotate(${1305 + degCounter}deg)`;
+        degCounter += 1305;
+      }
+      if (counter === 3) {
+        counter = 1;
+      }
+      setTimeout(() => pointer.removeAttribute("disabled", "disabled"), 2000);
+    });
+  </script>
+  <script>
+    const modalDate = document.querySelector(".modal__date");
+    const modalTitle = document.querySelector(".modal__title");
+
+    window.addEventListener("resize", function () {
+      if (window.innerWidth < 480) {
+        let parentDiv = modalDate.parentNode;
+        parentDiv.insertBefore(modalDate, modalTitle);
+      }
+      else {
+        let parentDiv = modalTitle.parentNode;
+        parentDiv.insertBefore(modalTitle, modalDate);
+      }
+    });
+  </script>
+</body>
+
+</html>
