@@ -301,19 +301,24 @@
     });
   </script>
   <script>
-    const modalDate = document.querySelector(".modal__date");
+     const modalDate = document.querySelector(".modal__date");
     const modalTitle = document.querySelector(".modal__title");
-
+    let resize = () => {
+      let parentDiv = modalDate.parentNode;
+      parentDiv.insertBefore(modalDate, modalTitle);
+    }
     window.addEventListener("resize", function () {
       if (window.innerWidth < 480) {
-        let parentDiv = modalDate.parentNode;
-        parentDiv.insertBefore(modalDate, modalTitle);
+        resize();
       }
       else {
         let parentDiv = modalTitle.parentNode;
         parentDiv.insertBefore(modalTitle, modalDate);
       }
     });
+    if (window.innerWidth < 480) {
+      resize()
+    }
   </script>
 </body>
 
